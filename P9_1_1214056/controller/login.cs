@@ -19,8 +19,8 @@ namespace P9_1_1214056.controller
             try
             {
                 koneksi.OpenConnection();
-                MySqlDataReader reader = koneksi.reader("Select * From admin Where Username ='" +
-                    user + "' AND Password ='" + pass + "'");
+                MySqlDataReader reader = koneksi.reader("Select * From t_admin Where user ='" +
+                    user + "' AND pass ='" + pass + "'");
                 if (reader.Read())
                 {
                     koneksi.CloseConnection();

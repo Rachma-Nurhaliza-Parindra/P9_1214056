@@ -22,6 +22,7 @@ namespace P9_1_1214056.controller
         {
             InitializeComponent();
         }
+        /*
         string connectionstring = "datasource=127.0.0.1;port=3306;Uid=root;pwd=;database=ulbi;";
         public void loginnn()
         {
@@ -57,7 +58,7 @@ namespace P9_1_1214056.controller
             {
                 MessageBox.Show("Something Wrong, Please Try again.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        }*/
         private void btLogin_Click(object sender, EventArgs e)
         {
             if(tbUsername.Text == "" || tbPassword.Text == "")
