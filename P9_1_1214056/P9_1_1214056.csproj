@@ -85,10 +85,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\login.cs" />
+    <Compile Include="controller\MasterBarang.cs" />
+    <Compile Include="controller\Nilai.cs" />
+    <Compile Include="controller\TransaksiBarang.cs" />
+    <Compile Include="model\M_barang.cs" />
+    <Compile Include="model\M_nilai.cs" />
+    <Compile Include="model\M_transaksi.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormMasterBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormMasterBarang.Designer.cs">
+      <DependentUpon>FormMasterBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormNilai.Designer.cs">
+      <DependentUpon>FormNilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\FormTransaksiBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FormTransaksiBarang.Designer.cs">
+      <DependentUpon>FormTransaksiBarang.cs</DependentUpon>
     </Compile>
     <Compile Include="view\Login.cs">
       <SubType>Form</SubType>
@@ -119,6 +143,15 @@
     <Compile Include="view\ParentForm.Designer.cs">
       <DependentUpon>ParentForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\FormMasterBarang.resx">
+      <DependentUpon>FormMasterBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormNilai.resx">
+      <DependentUpon>FormNilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FormTransaksiBarang.resx">
+      <DependentUpon>FormTransaksiBarang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
