@@ -114,6 +114,12 @@
     <Compile Include="view\FormTransaksiBarang.Designer.cs">
       <DependentUpon>FormTransaksiBarang.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\FstartUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FstartUp.Designer.cs">
+      <DependentUpon>FstartUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\FormTransaksiBarang.resx">
       <DependentUpon>FormTransaksiBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\FstartUp.resx">
+      <DependentUpon>FstartUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

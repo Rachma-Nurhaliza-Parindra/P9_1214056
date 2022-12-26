@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnExport = new System.Windows.Forms.Button();
             this.tbCariData = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.GBTombol = new System.Windows.Forms.GroupBox();
@@ -185,14 +186,25 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnExport);
             this.groupBox1.Controls.Add(this.tbCariData);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Location = new System.Drawing.Point(548, 203);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(240, 70);
+            this.groupBox1.Size = new System.Drawing.Size(243, 76);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Form Pencarian ";
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(11, 50);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(103, 23);
+            this.btnExport.TabIndex = 2;
+            this.btnExport.Text = "Export to Excel";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // tbCariData
             // 
@@ -217,9 +229,9 @@
             this.GBTombol.Controls.Add(this.btnUbah);
             this.GBTombol.Controls.Add(this.btnSimpan);
             this.GBTombol.Controls.Add(this.btnRefresh);
-            this.GBTombol.Location = new System.Drawing.Point(548, 279);
+            this.GBTombol.Location = new System.Drawing.Point(548, 285);
             this.GBTombol.Name = "GBTombol";
-            this.GBTombol.Size = new System.Drawing.Size(250, 150);
+            this.GBTombol.Size = new System.Drawing.Size(250, 145);
             this.GBTombol.TabIndex = 5;
             this.GBTombol.TabStop = false;
             this.GBTombol.Text = "Tombol Action";
@@ -236,7 +248,7 @@
             // 
             // btnUbah
             // 
-            this.btnUbah.Location = new System.Drawing.Point(22, 91);
+            this.btnUbah.Location = new System.Drawing.Point(22, 94);
             this.btnUbah.Name = "btnUbah";
             this.btnUbah.Size = new System.Drawing.Size(200, 23);
             this.btnUbah.TabIndex = 2;
@@ -246,7 +258,7 @@
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(22, 56);
+            this.btnSimpan.Location = new System.Drawing.Point(22, 66);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(200, 23);
             this.btnSimpan.TabIndex = 1;
@@ -256,7 +268,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(22, 24);
+            this.btnRefresh.Location = new System.Drawing.Point(22, 37);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(200, 23);
             this.btnRefresh.TabIndex = 0;
@@ -309,5 +321,6 @@
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TextBox tbnama;
+        private System.Windows.Forms.Button btnExport;
     }
 }

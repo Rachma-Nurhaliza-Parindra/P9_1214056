@@ -30,7 +30,6 @@
         {
             this.MdiMenu = new System.Windows.Forms.MenuStrip();
             this.FileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DataMahasiswaMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataMansterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DataMahasiswaMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,23 +60,15 @@
             // FileMenuItem
             // 
             this.FileMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.DataMahasiswaMenuItem,
             this.ExitMenuItem});
             this.FileMenuItem.Name = "FileMenuItem";
             this.FileMenuItem.Size = new System.Drawing.Size(37, 20);
             this.FileMenuItem.Text = "&File";
             // 
-            // DataMahasiswaMenuItem
-            // 
-            this.DataMahasiswaMenuItem.Name = "DataMahasiswaMenuItem";
-            this.DataMahasiswaMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.DataMahasiswaMenuItem.Text = "Data &Mahasiswa";
-            this.DataMahasiswaMenuItem.Click += new System.EventHandler(this.DataMahasiswaMenuItem_Click);
-            // 
             // ExitMenuItem
             // 
             this.ExitMenuItem.Name = "ExitMenuItem";
-            this.ExitMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.ExitMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ExitMenuItem.Text = "&Exit";
             this.ExitMenuItem.Click += new System.EventHandler(this.ExitMenuItem_Click);
             // 
@@ -92,7 +83,7 @@
             // DataMahasiswaMenu
             // 
             this.DataMahasiswaMenu.Name = "DataMahasiswaMenu";
-            this.DataMahasiswaMenu.Size = new System.Drawing.Size(159, 22);
+            this.DataMahasiswaMenu.Size = new System.Drawing.Size(180, 22);
             this.DataMahasiswaMenu.Text = "Data &Mahasiswa";
             this.DataMahasiswaMenu.Click += new System.EventHandler(this.DataMahasiswaMenu_Click);
             // 
@@ -107,7 +98,7 @@
             // InputNilaiMenuItem
             // 
             this.InputNilaiMenuItem.Name = "InputNilaiMenuItem";
-            this.InputNilaiMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.InputNilaiMenuItem.Size = new System.Drawing.Size(129, 22);
             this.InputNilaiMenuItem.Text = "Input Nilai";
             this.InputNilaiMenuItem.Click += new System.EventHandler(this.InputNilaiMenuItem_Click);
             // 
@@ -138,14 +129,14 @@
             // DataMasterBarangMenuItem
             // 
             this.DataMasterBarangMenuItem.Name = "DataMasterBarangMenuItem";
-            this.DataMasterBarangMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DataMasterBarangMenuItem.Size = new System.Drawing.Size(177, 22);
             this.DataMasterBarangMenuItem.Text = "Data Master Barang";
             this.DataMasterBarangMenuItem.Click += new System.EventHandler(this.DataMasterBarangMenuItem_Click);
             // 
             // DataTransaksiMenuItem
             // 
             this.DataTransaksiMenuItem.Name = "DataTransaksiMenuItem";
-            this.DataTransaksiMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DataTransaksiMenuItem.Size = new System.Drawing.Size(177, 22);
             this.DataTransaksiMenuItem.Text = "Data Transaksi";
             this.DataTransaksiMenuItem.Click += new System.EventHandler(this.DataTransaksiMenuItem_Click);
             // 
@@ -159,6 +150,7 @@
             this.MainMenuStrip = this.MdiMenu;
             this.Name = "ParentForm";
             this.Text = "Parent Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ParentForm_FormClosing);
             this.MdiMenu.ResumeLayout(false);
             this.MdiMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -170,7 +162,6 @@
 
         private System.Windows.Forms.MenuStrip MdiMenu;
         private System.Windows.Forms.ToolStripMenuItem FileMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem DataMahasiswaMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ExitMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HelpMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AboutMeMenuItem;
